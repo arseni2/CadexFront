@@ -14,7 +14,7 @@ const SubmissionPage = () => {
 
 	const sendDataToServer = async (data: { username: string; email: string; message: string; }) => {
 		try {
-			const response = await fetch('http://localhost:3000/api', {
+			const response = await fetch('https://cadexserver.onrender.com/api', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',
